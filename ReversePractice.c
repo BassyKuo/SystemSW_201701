@@ -4,9 +4,9 @@
 
 char* reverse (char* str) {
     //*** Method 1: 0.005 ~ 0.013 sec ***//
-    int len = strlen (str);
+    unsigned int len = strlen (str);
     //*** Method 2: 0.013 sec ***//
-    //int len;
+    //unsigned int len;
     //for (len = 0; *(str + len) != '\0'; ++len);
     if (len > 0) {              
         int tmp = *(str);       
