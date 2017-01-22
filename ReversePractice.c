@@ -3,7 +3,11 @@
 #include <string.h>
 
 char* reverse (char* str) {
-    int len = strlen (str);     
+    //*** Method 1: 0.005 ~ 0.013 sec ***//
+    int len = strlen (str);
+    //*** Method 2: 0.013 sec ***//
+    //int len;
+    //for (len = 0; *(str + len) != '\0'; ++len);
     if (len > 0) {              
         int tmp = *(str);       
         *str = *(str + (len-1) * sizeof(char));
